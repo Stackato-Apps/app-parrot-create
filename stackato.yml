@@ -1,0 +1,15 @@
+name: parrot-create
+
+framework:
+  type: perl
+
+mem: 128M
+
+services:
+  parrot-create: filesystem
+
+hooks:
+  pre-running:
+    - ln -s $STACKATO_FILESYSTEM public/tmp
+ignores: []
+

@@ -16,6 +16,7 @@ my $builder = Module::Build->new(
         'YAML'         => 0,
         'Dancer'       => 1.3040,
         'Archive::Zip' => 0,
+        'IPC::System::Simple' => 0,
     },
     add_to_cleanup      => [ 'App-Parrot-Create-*' ],
     meta_merge     => {
